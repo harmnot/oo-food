@@ -29,6 +29,7 @@ class ItemsCategory extends StatelessWidget {
                 image: categoryMeals[index].imageUrl,
                 affordability: categoryMeals[index].affordability,
                 complexity: categoryMeals[index].complexity,
+                duration: categoryMeals[index].duration,
               );
             },
             itemCount: categoryMeals.length,
