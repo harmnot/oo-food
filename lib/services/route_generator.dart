@@ -12,7 +12,7 @@ class RouteGenerator {
     switch(settings.name) {
       case homePage:
         return MaterialPageRoute(
-            builder: (_) => CategoryPage(),
+            builder: (_)=> CategoryPage(),
         );
       case categoriesPage:
         return MaterialPageRoute(

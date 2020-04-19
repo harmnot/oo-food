@@ -8,15 +8,14 @@ class CategoryList extends StatelessWidget {
 
   CategoryList({this.title, this.color, this.id });
 
-  void _selectedCategory(BuildContext ctx,String id, txt) {
-    Category category = Category(id: id, title: title);
-    Navigator.pushNamed(ctx, '/categories-list',arguments: category);
+  void selectedCategory(BuildContext ctx, String id, txt) {
+    Navigator.of(ctx).pushNamed('/categories-list', arguments: { 'id': id, 'title': txt} );
   }
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => _selectedCategory(context, id, title),
+      onTap: () => selectedCategory(context, id, title),
       child: Container(
         padding: const EdgeInsets.all(25),
         child: Text(
@@ -29,13 +28,19 @@ class CategoryList extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [
-                color.withOpacity(0.6),
-                color
+                color.withOpacity(0.1),
+                color,
+                Color(0xffffb3d9)
               ],
             begin: Alignment.topLeft,
-            end: Alignment.bottomRight
+            end: Alignment.bottomRight,
+            stops: [
+              0.1,
+              0.4,
+              0.6,
+            ]
           ),
-          borderRadius: BorderRadius.circular(15)
+          borderRadius: BorderRadius.circular(15),
         ),
       ),
     );

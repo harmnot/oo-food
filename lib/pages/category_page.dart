@@ -13,10 +13,10 @@ class CategoryPage extends StatelessWidget {
         ),
         body: GridView(
             padding: EdgeInsets.all(10),
-            children: DUMMY_CATEGORY.map((catData) => CategoryList(color: catData.color, title: catData.title)).toList(),
+            children: DUMMY_CATEGORY.map((catData) => CategoryList(color: catData.color, title: catData.title, id: catData.id)).toList(),
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
               maxCrossAxisExtent: 200,
-              childAspectRatio:  3 / 2,
+              childAspectRatio:  3 / 4,
               mainAxisSpacing: 20,
               crossAxisSpacing: 20,
             )

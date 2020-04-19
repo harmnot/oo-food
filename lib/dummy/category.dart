@@ -5,7 +5,7 @@ const DUMMY_CATEGORY = const [
   Category(
     id: 'i990',
     title: 'Asian',
-    color: Color(0xffff6699)
+    color: Color(0xffff6099)
   ),
   Category(
       id: 'i991',
@@ -23,7 +23,7 @@ const DUMMY_CATEGORY = const [
       color: Color(0xffffb3ff)
   ),
   Category(
-      id: 'i993',
+      id: 'i9911',
       title: 'African',
       color: Color(0xffff99f1)
   ),
