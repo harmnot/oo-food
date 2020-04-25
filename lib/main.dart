@@ -23,15 +23,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    MaterialColor colorCustom = MaterialColor(0xFFffb3d9, color);
+    MaterialColor colorCustom = MaterialColor(0xFF0C090A, color);
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         textTheme: GoogleFonts.ntrTextTheme(
           Theme.of(context).textTheme,
         ),
         primarySwatch: colorCustom,
-        accentColor: Colors.amber
+        accentColor: Colors.amber,
+        backgroundColor: Color(0xFF0C090A)
       ),
       onGenerateRoute: RouteGenerator.generateRoute,
       initialRoute: '/',

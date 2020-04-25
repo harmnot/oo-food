@@ -5,41 +5,41 @@ const DUMMY_CATEGORY = const [
   Category(
     id: 'i990',
     title: 'Asian',
-    color: Color(0xffff6099)
+    img: 'Forbidden-City.png'
   ),
   Category(
       id: 'i991',
       title: 'Italian',
-      color: Color(0xffff99ff)
+      img: 'Florence-Cathedral.png'
   ),
   Category(
       id: 'i992',
-      title: 'Koream',
-      color: Color(0xffffccff)
+      title: 'Korean',
+      img: 'Edinburgh-Castle.png'
   ),
   Category(
       id: 'i993',
       title: 'Mexican',
-      color: Color(0xffffb3ff)
+      img: 'Rialto-Bridge.png'
   ),
   Category(
       id: 'i9911',
       title: 'African',
-      color: Color(0xffff99f1)
+      img: 'Moai.png'
   ),
   Category(
       id: 'i994',
       title: 'American',
-      color: Color(0xffff80aa)
+      img: 'Washington-Monument.png'
   ),
   Category(
       id: 'i995',
       title: 'European',
-      color: Color(0xffff80bf)
+      img: 'Eiffel.png'
   ),
   Category(
       id: 'i996',
       title: 'Arabian',
-      color: Color(0xffff66ff)
+      img: 'Taj-Mahal.png'
   )
 ];
