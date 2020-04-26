@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meals/pages/category_page.dart';
 import 'package:meals/pages/items_category_page.dart';
 import 'package:meals/pages/meal_detail_page.dart';
+import 'package:meals/pages/tab_page.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -11,7 +12,7 @@ class RouteGenerator {
     switch(settings.name) {
       case homePage:
         return MaterialPageRoute(
-            builder: (_)=> CategoryPage(),
+            builder: (_)=> MainTab(),
         );
       case ItemsCategory.routeName:
         return MaterialPageRoute(

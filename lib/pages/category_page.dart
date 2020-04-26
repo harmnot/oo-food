@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:meals/dummy/category.dart';
 import 'package:meals/views/category_list.dart';
@@ -25,11 +24,7 @@ class CategoryPage extends StatelessWidget {
 
 
     return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Category'),
-        ),
-        body: Container(
+      child: Container(
           color: Theme.of(context).backgroundColor,
           child: ListView(
             children: <Widget>[
@@ -41,7 +36,6 @@ class CategoryPage extends StatelessWidget {
             ],
           ),
         )
-      ),
     );
   }
 }
